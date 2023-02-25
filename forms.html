@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="'en-US">
+	<meta charset="UTF-8"/>
 <head>
 	<title>My Simple HTML Form</title>
 </head>
@@ -14,13 +15,18 @@
         <label for="email">Number:</label>
 		<input placeholder="Type your number" type="email" id="number" name="number" required><br><br>
 		
-        <label for="email">Email:</label>
-		<input placeholder="Type your e-mail" type="email" id="email" name="email" required><br><br>
         <div>
             <label for="message">Date of Birth</label>
             <input type="date" placeholder="Type your message here" id="birth" name="BirthDate" required><br><br>
         </div>
-
+		<div>
+			<label for="PostalCode">Postal Code:
+				<input name="PostalCode" id="PostalCode" required pattern="\d{5} - ?\d{3}">
+			</label>
+		</div>
+		</form>
+	</body>
+<br/>
 		<input type="submit" value="Submit">
 	</form>
 </body>
